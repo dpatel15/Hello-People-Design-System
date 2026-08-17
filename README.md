@@ -1,8 +1,8 @@
-# Hello People — Design System
+# Hello People Design System
 
 **Say hello to less busywork.**
 
-The single source of truth for the Hello People brand and product — so everything
+The single source of truth for the Hello People brand and product, so everything
 we make (website, social, decks, product UI) looks, sounds, and feels like *us*.
 
 > **Human on the surface. Engineered underneath.** We're the warm face on powerful
@@ -52,7 +52,7 @@ Or build your own on the tokens (primary is **solid blue**, not gradient):
 
 ```css
 .button-primary {
-  background: var(--hp-blue);          /* solid — gradient is reserved */
+  background: var(--hp-blue);          /* solid, gradient is reserved */
   color: #fff;
   border-radius: var(--hp-radius-md);
   font-family: var(--hp-font-body);
@@ -70,20 +70,20 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 
 ## The three rules that keep it premium
 
-1. **90 / 10 color** — ~90% flat neutrals + one solid color; the gradient earns ~10%.
-2. **Space is a feature** — when unsure, add more.
-3. **Sell the outcome, not the tech** — plain, human words. See `voice-and-tone.md`.
+1. **95 / 5 color**, ~95% flat neutrals + solid blue; the gradient earns ~5%.
+2. **Space is a feature**, when unsure, add more.
+3. **Sell the outcome, not the tech**, plain, human words. See `voice-and-tone.md`.
 
 ---
 
 ## Roadmap
 
 - [x] Brand foundation, voice & tone, visual language
-- [x] Design tokens (CSS + JSON) — matched to the master logo
-- [x] Logo — master vectors (light / dark / mono / mark / favicon)
-- [x] Homepage — flagship page built on the system (light/dark)
-- [x] Component library — buttons, cards, badges, forms, notes (`components/components.css`)
-- [x] Living guidelines site — interactive style guide (`web/guidelines.html`)
+- [x] Design tokens (CSS + JSON), matched to the master logo
+- [x] Logo, master vectors (light / dark / mono / mark / favicon)
+- [x] Homepage, flagship page built on the system (light/dark)
+- [x] Component library, buttons, cards, badges, forms, notes (`components/components.css`)
+- [x] Living guidelines site, interactive style guide (`web/guidelines.html`)
 - [ ] Social media templates (IG / LinkedIn / ad creative)
 - [ ] Proposal & deck template
 - [ ] Refactor homepage onto `components.css` classes
@@ -92,7 +92,7 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 
 ## Status
 
-`v0.3` — foundation, tokens, master logo, flagship homepage, component library,
+`v0.3`, foundation, tokens, master logo, flagship homepage, component library,
 and a living guidelines site. Next: social templates + proposal/deck.
 
-*Contributions follow the brand rules above — if it doesn't serve them, it doesn't ship.*
+*Contributions follow the brand rules above, if it doesn't serve them, it doesn't ship.*

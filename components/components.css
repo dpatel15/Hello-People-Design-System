@@ -1,5 +1,5 @@
 /* =============================================================================
-   HELLO PEOPLE — COMPONENTS
+   HELLO PEOPLE COMPONENTS
    Reusable UI classes built entirely on tokens.css. Prefix: .hp-
    Load order:  tokens.css  →  components.css
    Rule of the system: solid --hp-blue is the workhorse; the gradient is
@@ -38,7 +38,7 @@
 .hp-btn--subtle:hover{transform:translateY(-2px)}
 .hp-btn--white{background:#fff;color:#14161D}
 .hp-btn--white:hover{transform:translateY(-2px)}
-/* Gradient button — CTA band ONLY. Do not use in general UI. */
+/* Gradient button, CTA band ONLY. Do not use in general UI. */
 .hp-btn--gradient{background:var(--hp-gradient);color:#fff;box-shadow:var(--hp-shadow-brand)}
 .hp-btn--gradient:hover{transform:translateY(-2px)}
 

@@ -1,5 +1,5 @@
 /* =============================================================================
-   HELLO PEOPLE — DESIGN TOKENS
+   HELLO PEOPLE DESIGN TOKENS
    Single source of truth for color, type, space, radius, elevation & motion.
    Everything downstream (components, site, decks) reads from these variables.
    Change a value here → it updates everywhere.
@@ -10,9 +10,9 @@
      "Hello" charcoal   #3F454C
 
    Layers:
-   1. PRIMITIVES  — raw brand values. Never reference these directly in UI.
-   2. SEMANTIC    — role-based tokens (bg, text, border…). Use THESE in UI.
-   3. THEMING     — semantic tokens re-mapped for dark mode.
+   1. PRIMITIVES, raw brand values. Never reference these directly in UI.
+   2. SEMANTIC, role-based tokens (bg, text, border…). Use THESE in UI.
+   3. THEMING, semantic tokens re-mapped for dark mode.
    ============================================================================= */
 
 :root {
@@ -20,10 +20,10 @@
      1. PRIMITIVES
      --------------------------------------------------------------------------- */
 
-  /* Brand core — exact values from the logo */
-  --hp-blue:        #1D50CF;   /* Link Blue    — trust, intelligence, "the tech" */
-  --hp-violet:      #903DA4;   /* Bridge Violet — where machine meets human */
-  --hp-magenta:     #E0497C;   /* People Magenta — warmth, energy, humanity */
+  /* Brand core, exact values from the logo */
+  --hp-blue:        #1D50CF;   /* Link Blue, trust, intelligence, "the tech" */
+  --hp-violet:      #903DA4;   /* Bridge Violet, where machine meets human */
+  --hp-magenta:     #E0497C;   /* People Magenta, warmth, energy, humanity */
 
   /* Brand tints / shades (for hovers, fills, focus rings) */
   --hp-blue-800:    #0154B8;   /* deep ring blue */
@@ -35,13 +35,13 @@
   --hp-magenta-600: #E0497C;
   --hp-magenta-100: #FBE6EE;
 
-  /* The signature gradient — ONE token, used everywhere, so it never drifts */
+  /* The signature gradient, ONE token, used everywhere, so it never drifts */
   --hp-gradient:        linear-gradient(120deg, #1D50CF 0%, #903DA4 52%, #E0497C 100%);
   --hp-gradient-135:    linear-gradient(135deg, #1D50CF 0%, #903DA4 52%, #E0497C 100%);
   --hp-gradient-soft:   linear-gradient(120deg, rgba(29,80,207,.12), rgba(144,61,164,.12), rgba(224,73,124,.12));
   --hp-gradient-text:   linear-gradient(120deg, #1D50CF, #903DA4, #E0497C);
 
-  /* Neutrals — cool-biased (a hint of blue) so they read "chosen", not default grey */
+  /* Neutrals, cool-biased (a hint of blue) so they read "chosen", not default grey */
   --hp-ink-950: #0C0D12;
   --hp-ink-900: #14161D;
   --hp-ink-800: #1B1E27;   /* primary text / dominant dark ground */
@@ -58,7 +58,7 @@
   --hp-ink-25:  #FAFAFC;   /* page paper */
   --hp-white:   #FFFFFF;
 
-  /* Feedback (semantic status — distinct from the brand accent) */
+  /* Feedback (semantic status, distinct from the brand accent) */
   --hp-success: #12A150;
   --hp-success-bg: #E7F6EE;
   --hp-warning: #C77700;
@@ -75,7 +75,7 @@
   --hp-font-body:    "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   --hp-font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
-  /* Type scale — 1rem base, ~1.25 (major third) */
+  /* Type scale, 1rem base, ~1.25 (major third) */
   --hp-text-xs:   0.75rem;    /* 12 */
   --hp-text-sm:   0.875rem;   /* 14 */
   --hp-text-base: 1rem;       /* 16 */
@@ -108,7 +108,7 @@
   --hp-measure: 65ch;             /* comfortable reading width */
 
   /* ---------------------------------------------------------------------------
-     SPACING — 4px base scale
+     SPACING, 4px base scale
      --------------------------------------------------------------------------- */
   --hp-space-0:  0;
   --hp-space-1:  0.25rem;   /* 4  */
@@ -135,7 +135,7 @@
   --hp-radius-pill: 999px;
 
   /* ---------------------------------------------------------------------------
-     ELEVATION — soft, cool-tinted shadows (never harsh black)
+     ELEVATION, soft, cool-tinted shadows (never harsh black)
      --------------------------------------------------------------------------- */
   --hp-shadow-sm:  0 1px 2px rgba(20,22,34,.05), 0 1px 3px rgba(20,22,34,.05);
   --hp-shadow-md:  0 2px 6px rgba(20,22,34,.06), 0 8px 24px rgba(20,22,34,.07);
@@ -156,7 +156,7 @@
   --hp-container-narrow: 760px;
 
   /* ---------------------------------------------------------------------------
-     2. SEMANTIC TOKENS (LIGHT) — use these in UI, not the primitives above
+     2. SEMANTIC TOKENS (LIGHT), use these in UI, not the primitives above
      --------------------------------------------------------------------------- */
   --hp-bg:            var(--hp-ink-25);
   --hp-bg-elevated:   var(--hp-white);
@@ -180,7 +180,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-   3. THEMING — dark mode  (values from the on-dark-bright logo variant)
+   3. THEMING, dark mode  (values from the on-dark-bright logo variant)
    Order matters: OS-dark first (guarded so an explicit light choice wins),
    then explicit [data-theme="dark"] so the toggle wins in both directions.
    Only tokens are re-mapped here; components never restyle inside these blocks.

@@ -1,4 +1,4 @@
-# Hello People — Voice & Tone
+# Hello People Voice & Tone
 
 The way we sound is half the brand. A calm, human voice is what makes an AI
 company feel trustworthy instead of intimidating.
@@ -8,7 +8,7 @@ company feel trustworthy instead of intimidating.
 ## Voice (always) vs. Tone (adapts)
 
 **Voice** is fixed: plain-spoken, confident, human, credible.
-**Tone** flexes to the moment — warmer on a landing page, more precise in docs,
+**Tone** flexes to the moment, warmer on a landing page, more precise in docs,
 more reassuring in an error message.
 
 ---
@@ -18,12 +18,15 @@ more reassuring in an error message.
 1. **Sell the outcome, not the technology.** Nobody buys "LLM-powered workflow
    orchestration." They buy *"get your evenings back."* Lead with the result.
 2. **Plain language, always.** If a smart 12-year-old wouldn't follow it, rewrite
-   it. Explain the hard thing simply — that's the flex.
+   it. Explain the hard thing simply, that's the flex.
 3. **Talk to one person.** "You," not "clients" or "users." Second person, active
    voice, present tense.
 4. **Be confident, not hypey.** State what's true. Drop "revolutionary,"
    "cutting-edge," "game-changing," "seamless," "synergy," "unlock," "supercharge."
 5. **Respect their time.** Short sentences. Front-load the point. Cut throat-clearing.
+6. **No em dashes or en dashes ("—" / "–").** They read as AI-generated. Use a
+   comma, colon, period, or parentheses instead, and write "to" for ranges
+   (e.g. "Mon to Fri"). A plain hyphen in compound words (follow-ups) is fine.
 
 ---
 

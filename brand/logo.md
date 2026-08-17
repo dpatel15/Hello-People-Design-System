@@ -1,4 +1,4 @@
-# Hello People — Logo Guidelines
+# Hello People Logo Guidelines
 
 Files live in [`/assets/logo`](../assets/logo).
 
@@ -10,9 +10,9 @@ Files live in [`/assets/logo`](../assets/logo).
 
 | File | Use |
 |---|---|
-| `hello-people-logo.svg` | Primary — **light** backgrounds (default) |
+| `hello-people-logo.svg` | Primary, **light** backgrounds (default) |
 | `hello-people-logo-dark.svg` | **Dark** UI / near-black (brightened gradient for contrast) |
-| `hello-people-logo-onDark-exact.svg` | Dark, exact brand gradients — only when mandated |
+| `hello-people-logo-onDark-exact.svg` | Dark, exact brand gradients, only when mandated |
 | `hello-people-logo-white.svg` | One-colour **white** (photos, merch, busy backgrounds) |
 | `hello-people-logo-black.svg` | One-colour **black** (print, invoices, stamps) |
 
@@ -31,18 +31,18 @@ Files live in [`/assets/logo`](../assets/logo).
 | `hello-people-favicon.svg` | Light tabs / app icon |
 | `hello-people-favicon-dark.svg` | Dark tabs / app icon |
 
-> **Status:** master SVGs (Clod Design). Text is **converted to outlines** — they
+> **Status:** master SVGs (Clod Design). Text is **converted to outlines**, they
 > render identically anywhere, no fonts required. These are the production files.
 
 ---
 
 ## Anatomy
 
-- **The mark** — two speech bubbles: an open blue *ring* bubble (the human /
+- **The mark**, two speech bubbles: an open blue *ring* bubble (the human /
   listening) locking into a gradient *"AI"* bubble (the intelligence). Together
   they say "bridging humans and AI."
-- **The wordmark** — **Hello** (ink/charcoal) stacked over **People.** (gradient),
-  set in Poppins Bold. The **period is part of the logo** — it makes it a statement.
+- **The wordmark**, **Hello** (ink/charcoal) stacked over **People.** (gradient),
+  set in Poppins Bold. The **period is part of the logo**, it makes it a statement.
 
 ---
 
@@ -84,7 +84,7 @@ For one-color contexts (engraving, faxable docs, a partner's dark UI, watermarks
 - ❌ Don't place the full-color logo on a busy photo without a neutral chip.
 - ❌ Don't re-typeset the wordmark in a different font.
 - ❌ Don't separate "People" from its period, or the mark's two bubbles.
-- ❌ Don't crowd it — respect the clear space.
+- ❌ Don't crowd it, respect the clear space.
 
 ---
 

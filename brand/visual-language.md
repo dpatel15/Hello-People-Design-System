@@ -1,4 +1,4 @@
-# Hello People — Visual Language
+# Hello People Visual Language
 
 How color, type, space, and motion do their emotional job. Pairs with
 `foundation.md` (the strategy) and `../tokens/tokens.css` (the exact values).
@@ -8,7 +8,7 @@ How color, type, space, and motion do their emotional job. Pairs with
 ## Color
 
 We use **three brand colors on a large, calm neutral canvas.** The neutrals are
-the brand as much as the gradient is — restraint is the point.
+the brand as much as the gradient is, restraint is the point.
 
 ### What each color says
 
@@ -16,7 +16,7 @@ the brand as much as the gradient is — restraint is the point.
 |---|---|---|---|
 | **Link Blue** `#1D50CF` | `--hp-blue` | Trust, intelligence, stability. "The tech is solid." | Primary actions, links, active states, focus rings, data/UI. The default brand color when you need *one*. |
 | **Bridge Violet** `#903DA4` | `--hp-violet` | Transition, imagination, the meeting point. | Mostly *inside* the gradient. Rarely used solid. |
-| **People Magenta** `#E0497C` | `--hp-magenta` | Warmth, energy, humanity. "There are people here." | Human touches — a highlight, an underline, the "." in the wordmark, one small emphasis per view. |
+| **People Magenta** `#E0497C` | `--hp-magenta` | Warmth, energy, humanity. "There are people here." | Human touches, a highlight, an underline, the "." in the wordmark, one small emphasis per view. |
 | **Ink** `#1B1E27` | `--hp-ink-800` | Grounded, premium, serious. | Headlines and the dominant dark ground. The logo's "Hello" uses a softer `#3F454C` (`--hp-ink-600`). |
 | **Neutrals** `#6B6F7D → #FAFAFC` | `--hp-ink-*` | Calm, spacious, considered. | ~90% of every surface. Cool-biased so they feel chosen. |
 
@@ -28,16 +28,15 @@ the brand as much as the gradient is — restraint is the point.
 `--hp-gradient` = `linear-gradient(120deg, #1D50CF, #903DA4, #E0497C)`
 
 It runs **blue → violet → magenta**: cool to warm, machine to human. That
-direction is the story — never reverse it arbitrarily. It lives in exactly one
+direction is the story, never reverse it arbitrarily. It lives in exactly one
 token so it's identical on the site, a deck, and a social post.
 
-**Where the gradient is allowed (reserved list — nowhere else):**
+**Where the gradient is allowed (reserved list, nowhere else):**
 - ✅ The **logo** (it lives in the mark and wordmark)
-- ✅ **One** hero brand moment per page — a payoff panel, a key graphic
+- ✅ **One** hero brand moment per page, a payoff panel, a key graphic
 - ✅ The **closing CTA band** at the bottom of a page
 
-Everything else — buttons, headlines, links, icons, numbers, stats, step markers
-— uses **solid Link Blue** (`--hp-blue`). The primary blue is the workhorse; the
+Everything else, buttons, headlines, links, icons, numbers, stats, step markers, uses **solid Link Blue** (`--hp-blue`). The primary blue is the workhorse; the
 gradient is the reward.
 
 **Where it is banned:**
@@ -48,7 +47,7 @@ gradient is the reward.
 
 ### The 95 / 5 rule
 
-Roughly **95%** of any surface is flat — ink, paper, solid blue. The gradient
+Roughly **95%** of any surface is flat, ink, paper, solid blue. The gradient
 earns the other **~5%,** in the reserved spots above. This restraint is the single
 biggest thing separating a confident, premium brand from the generic "AI slop"
 look. When in doubt, use solid blue.
@@ -56,7 +55,7 @@ look. When in doubt, use solid blue.
 ### Accessibility (non-negotiable)
 
 - Body text meets **WCAG AA** (≥ 4.5:1). Ink `#1B1E27` on Paper `#FAFAFC` clears this easily.
-- Magenta and Blue are for **large text, icons, and fills** — check contrast before using either for small text on white (magenta on white is borderline for body sizes).
+- Magenta and Blue are for **large text, icons, and fills**, check contrast before using either for small text on white (magenta on white is borderline for body sizes).
 - Never put small text directly on the gradient. White on the gradient is fine at display sizes.
 - Color is never the *only* signal (pair with icon/label/weight).
 
@@ -67,7 +66,7 @@ look. When in doubt, use solid blue.
 Two families, each with a clear job. This pairing was chosen to sound like the
 brand: **warm and geometric** for display, **quiet and legible** for reading.
 
-### Display — **Poppins**
+### Display, **Poppins**
 Rounded, geometric, friendly. It echoes the logo's wordmark directly, so
 headlines feel unmistakably "us." Used with restraint and tight tracking, Poppins
 reads confident and modern, not childish.
@@ -75,13 +74,13 @@ reads confident and modern, not childish.
 - Tracking: slightly tight (`--hp-tracking-tight`) on large sizes.
 - `text-wrap: balance` on headings.
 
-### Body & UI — **Inter**
+### Body & UI, **Inter**
 A neutral, highly legible workhorse built for screens. It gets out of the way and
 lets the content (and the occasional Poppins headline) carry the personality.
 - Weights: **400** body, **500/600** for UI labels and emphasis.
-- Line length ~**65 characters** (`--hp-measure`); line-height `1.55–1.7` for text.
+- Line length ~**65 characters** (`--hp-measure`); line-height `1.55 to 1.7` for text.
 
-### Utility — **JetBrains Mono**
+### Utility, **JetBrains Mono**
 For code, tokens, metrics, and any "engineered" moment where monospace signals
 precision. Optional, used lightly.
 
@@ -89,7 +88,7 @@ precision. Optional, used lightly.
 - One `h1` per page. Don't skip levels for looks.
 - Uppercase **eyebrows/labels** get wide tracking (`--hp-tracking-caps`) and muted color.
 - Numbers that line up in columns use `font-variant-numeric: tabular-nums`.
-- Size and weight create hierarchy — **not** color. Save color for meaning.
+- Size and weight create hierarchy, **not** color. Save color for meaning.
 
 ### The type scale
 Defined in tokens (`--hp-text-xs … --hp-text-6xl`, ~1.25 ratio). Stay on the
@@ -121,7 +120,7 @@ scale; don't invent one-off sizes.
 ## Motion
 
 Calm and confident, never bouncy or attention-seeking.
-- Standard easing `--hp-ease`; durations 120–320ms.
+- Standard easing `--hp-ease`; durations 120 to 320ms.
 - Micro-interactions: a 1px lift + shadow on hover; smooth focus rings.
 - Reveal-on-scroll is fine if subtle. **Always** honor `prefers-reduced-motion`.
 - Motion should feel like *competence*, not decoration. If it draws attention to
@@ -140,4 +139,4 @@ Calm and confident, never bouncy or attention-seeking.
 
 ---
 
-*Visual Language v0.2 — colors matched exactly to the master logo SVG.*
+*Visual Language v0.2, colors matched exactly to the master logo SVG.*
