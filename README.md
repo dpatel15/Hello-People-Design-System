@@ -27,7 +27,8 @@ Hello-People-Design-System/
 │   └── components.css            ← reusable UI classes (.hp-btn, .hp-card, .hp-badge…)
 ├── web/                          ← pages built on the system (self-contained)
 │   ├── index.html                ← flagship homepage
-│   └── guidelines.html           ← living, interactive style guide (open this!)
+│   ├── guidelines.html           ← living, interactive style guide (open this!)
+│   └── social.html               ← social post templates (IG / Story / LinkedIn)
 └── assets/
     ├── fonts/hello-people-fonts.css  ← embedded Poppins + Inter (offline-ready)
     └── logo/                     ← the logo, in vector
@@ -84,7 +85,7 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 - [x] Homepage, flagship page built on the system (light/dark)
 - [x] Component library, buttons, cards, badges, forms, notes (`components/components.css`)
 - [x] Living guidelines site, interactive style guide (`web/guidelines.html`)
-- [ ] Social media templates (IG / LinkedIn / ad creative)
+- [x] Social media templates, 5 formats (`web/social.html`, exported to `assets/social/`)
 - [ ] Proposal & deck template
 - [ ] Refactor homepage onto `components.css` classes
 
