@@ -14,10 +14,10 @@ the brand as much as the gradient is — restraint is the point.
 
 | Color | Token | Feels like | Use for |
 |---|---|---|---|
-| **Link Blue** `#1F5CE6` | `--hp-blue` | Trust, intelligence, stability. "The tech is solid." | Primary actions, links, active states, focus rings, data/UI. The default brand color when you need *one*. |
-| **Bridge Violet** `#7B3FD0` | `--hp-violet` | Transition, imagination, the meeting point. | Mostly *inside* the gradient. Rarely used solid. |
-| **People Magenta** `#E62E80` | `--hp-magenta` | Warmth, energy, humanity. "There are people here." | Human touches — a highlight, an underline, the "." in the wordmark, one small emphasis per view. |
-| **Ink** `#1B1E27` | `--hp-ink-800` | Grounded, premium, serious. | Headlines and the dominant dark ground. |
+| **Link Blue** `#1D50CF` | `--hp-blue` | Trust, intelligence, stability. "The tech is solid." | Primary actions, links, active states, focus rings, data/UI. The default brand color when you need *one*. |
+| **Bridge Violet** `#903DA4` | `--hp-violet` | Transition, imagination, the meeting point. | Mostly *inside* the gradient. Rarely used solid. |
+| **People Magenta** `#E0497C` | `--hp-magenta` | Warmth, energy, humanity. "There are people here." | Human touches — a highlight, an underline, the "." in the wordmark, one small emphasis per view. |
+| **Ink** `#1B1E27` | `--hp-ink-800` | Grounded, premium, serious. | Headlines and the dominant dark ground. The logo's "Hello" uses a softer `#3F454C` (`--hp-ink-600`). |
 | **Neutrals** `#6B6F7D → #FAFAFC` | `--hp-ink-*` | Calm, spacious, considered. | ~90% of every surface. Cool-biased so they feel chosen. |
 
 > **Rule of thumb:** Blue does the *work*, Magenta adds the *warmth*, the gradient
@@ -25,7 +25,7 @@ the brand as much as the gradient is — restraint is the point.
 
 ### The signature gradient
 
-`--hp-gradient` = `linear-gradient(120deg, #1F5CE6, #7B3FD0, #E62E80)`
+`--hp-gradient` = `linear-gradient(120deg, #1D50CF, #903DA4, #E0497C)`
 
 It runs **blue → violet → magenta**: cool to warm, machine to human. That
 direction is the story — never reverse it arbitrarily. It lives in exactly one
@@ -135,4 +135,4 @@ Calm and confident, never bouncy or attention-seeking.
 
 ---
 
-*Visual Language v0.1 — values pending exact match against the final source SVG.*
+*Visual Language v0.2 — colors matched exactly to the master logo SVG.*

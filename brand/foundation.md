@@ -94,31 +94,25 @@ no twelve competing buttons.
 
 ## 6. The tagline
 
-Recommended primary:
+**Primary tagline (locked):**
 
-> ## More done. More human.
+> ## Say hello to less busywork.
 
-Why it wins: three words, a rhythm you remember, and it carries the *entire*
-brand — efficiency (the AI) **and** humanity (the people), the two color families,
-the two speech bubbles. It's a promise, not a description. It ages well and works
-locked up under the logo.
+It plays on the name — a greeting that leads straight to the benefit — stays warm
+and human, and sells the outcome, not the technology. Unmistakably *us*.
 
-**Supporting descriptor** (the line that runs under it in a hero or bio):
+**Supporting descriptor (locked)** — the line that runs under it in a hero or bio:
 *We automate the busywork, so your team can focus on the work that needs a human.*
 
 ### The full shortlist (for reference / campaign lines)
 
-**Recommended**
-- **More done. More human.** ← primary
+**Locked primary**
+- **Say hello to less busywork.** ← the tagline
 
-**Strong alternates — benefit-led**
-- Automate the busywork. Keep the human.
+**Strong alternates — benefit-led** (usable as rotating campaign lines)
+- More done. More human.
 - Your business, minus the busywork.
-- Fewer hours. Better work.
-
-**Playful — leans on the name**
-- Say hello to less busywork.
-- Say hello to what's possible.
+- Automate the busywork. Keep the human.
 
 **Bridge / human + AI**
 - The human side of automation.

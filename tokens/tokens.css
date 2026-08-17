@@ -4,6 +4,11 @@
    Everything downstream (components, site, decks) reads from these variables.
    Change a value here → it updates everywhere.
 
+   Brand colors are read from the master logo SVG (Clod Design vectors):
+     wordmark gradient  #1D50CF → #903DA4 → #E0497C
+     ring (deep blue)   #0154B8
+     "Hello" charcoal   #3F454C
+
    Layers:
    1. PRIMITIVES  — raw brand values. Never reference these directly in UI.
    2. SEMANTIC    — role-based tokens (bg, text, border…). Use THESE in UI.
@@ -15,32 +20,33 @@
      1. PRIMITIVES
      --------------------------------------------------------------------------- */
 
-  /* Brand core — read straight from the logo */
-  --hp-blue:        #1F5CE6;   /* Link Blue    — trust, intelligence, "the tech" */
-  --hp-violet:      #7B3FD0;   /* Bridge Violet — where machine meets human */
-  --hp-magenta:     #E62E80;   /* People Magenta — warmth, energy, humanity */
+  /* Brand core — exact values from the logo */
+  --hp-blue:        #1D50CF;   /* Link Blue    — trust, intelligence, "the tech" */
+  --hp-violet:      #903DA4;   /* Bridge Violet — where machine meets human */
+  --hp-magenta:     #E0497C;   /* People Magenta — warmth, energy, humanity */
 
   /* Brand tints / shades (for hovers, fills, focus rings) */
-  --hp-blue-700:    #1746B8;
-  --hp-blue-600:    #1F5CE6;
-  --hp-blue-500:    #3A72EE;
-  --hp-blue-100:    #E5EDFD;
-  --hp-magenta-700: #B81E63;
-  --hp-magenta-600: #E62E80;
-  --hp-magenta-100: #FCE4EF;
+  --hp-blue-800:    #0154B8;   /* deep ring blue */
+  --hp-blue-700:    #123FA8;
+  --hp-blue-600:    #1D50CF;
+  --hp-blue-500:    #3A6BE0;
+  --hp-blue-100:    #E4EAF9;
+  --hp-magenta-700: #C43D6E;
+  --hp-magenta-600: #E0497C;
+  --hp-magenta-100: #FBE6EE;
 
   /* The signature gradient — ONE token, used everywhere, so it never drifts */
-  --hp-gradient:        linear-gradient(120deg, #1F5CE6 0%, #7B3FD0 52%, #E62E80 100%);
-  --hp-gradient-135:    linear-gradient(135deg, #1F5CE6 0%, #7B3FD0 52%, #E62E80 100%);
-  --hp-gradient-soft:   linear-gradient(120deg, rgba(31,92,230,.12), rgba(123,63,208,.12), rgba(230,46,128,.12));
-  --hp-gradient-text:   linear-gradient(120deg, #1F5CE6, #7B3FD0, #E62E80);
+  --hp-gradient:        linear-gradient(120deg, #1D50CF 0%, #903DA4 52%, #E0497C 100%);
+  --hp-gradient-135:    linear-gradient(135deg, #1D50CF 0%, #903DA4 52%, #E0497C 100%);
+  --hp-gradient-soft:   linear-gradient(120deg, rgba(29,80,207,.12), rgba(144,61,164,.12), rgba(224,73,124,.12));
+  --hp-gradient-text:   linear-gradient(120deg, #1D50CF, #903DA4, #E0497C);
 
   /* Neutrals — cool-biased (a hint of blue) so they read "chosen", not default grey */
   --hp-ink-950: #0C0D12;
   --hp-ink-900: #14161D;
   --hp-ink-800: #1B1E27;   /* primary text / dominant dark ground */
   --hp-ink-700: #2A2E39;
-  --hp-ink-600: #3A3E4B;
+  --hp-ink-600: #3F454C;   /* the logo's "Hello" charcoal */
   --hp-ink-500: #565B6A;
   --hp-ink-400: #6B6F7D;   /* muted / secondary text */
   --hp-ink-300: #9195A3;
@@ -59,8 +65,8 @@
   --hp-warning-bg: #FBF0DC;
   --hp-danger:  #E5484D;
   --hp-danger-bg: #FCE9E9;
-  --hp-info:    #1F5CE6;
-  --hp-info-bg: #E5EDFD;
+  --hp-info:    #1D50CF;
+  --hp-info-bg: #E4EAF9;
 
   /* ---------------------------------------------------------------------------
      TYPOGRAPHY
@@ -134,7 +140,7 @@
   --hp-shadow-sm:  0 1px 2px rgba(20,22,34,.05), 0 1px 3px rgba(20,22,34,.05);
   --hp-shadow-md:  0 2px 6px rgba(20,22,34,.06), 0 8px 24px rgba(20,22,34,.07);
   --hp-shadow-lg:  0 4px 12px rgba(20,22,34,.08), 0 24px 56px rgba(20,22,34,.10);
-  --hp-shadow-brand: 0 6px 18px rgba(31,92,230,.18), 0 18px 48px rgba(230,46,128,.14);
+  --hp-shadow-brand: 0 6px 18px rgba(29,80,207,.18), 0 18px 48px rgba(224,73,124,.14);
 
   /* ---------------------------------------------------------------------------
      MOTION
@@ -168,25 +174,25 @@
   --hp-border-strong: var(--hp-ink-200);
 
   --hp-accent:        var(--hp-blue);
-  --hp-accent-hover:  var(--hp-blue-700);
+  --hp-accent-hover:  var(--hp-blue-800);
   --hp-accent-quiet:  var(--hp-blue-100);
   --hp-focus-ring:    color-mix(in srgb, var(--hp-blue) 45%, transparent);
 }
 
 /* ---------------------------------------------------------------------------
-   3. THEMING — dark mode
+   3. THEMING — dark mode  (values from the on-dark-bright logo variant)
    Order matters: OS-dark first (guarded so an explicit light choice wins),
    then explicit [data-theme="dark"] so the toggle wins in both directions.
    Only tokens are re-mapped here; components never restyle inside these blocks.
    --------------------------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --hp-blue:    #4E82F5;
-    --hp-violet:  #A06EE6;
-    --hp-magenta: #F35B9E;
-    --hp-gradient:      linear-gradient(120deg, #2E6BF0 0%, #8B54DD 52%, #F0479A 100%);
-    --hp-gradient-soft: linear-gradient(120deg, rgba(78,130,245,.16), rgba(160,110,230,.16), rgba(243,91,158,.16));
-    --hp-gradient-text: linear-gradient(120deg, #4E82F5, #A06EE6, #F35B9E);
+    --hp-blue:    #3D6DE4;
+    --hp-violet:  #A84EBD;
+    --hp-magenta: #EC5C90;
+    --hp-gradient:      linear-gradient(120deg, #3D6DE4 0%, #A84EBD 52%, #E0497C 100%);
+    --hp-gradient-soft: linear-gradient(120deg, rgba(61,109,228,.16), rgba(168,78,189,.16), rgba(224,73,124,.16));
+    --hp-gradient-text: linear-gradient(120deg, #3D6DE4, #A84EBD, #EC5C90);
 
     --hp-bg:            var(--hp-ink-950);
     --hp-bg-elevated:   var(--hp-ink-900);
@@ -202,30 +208,30 @@
     --hp-border:        #262A35;
     --hp-border-strong: #333846;
 
-    --hp-accent:        #4E82F5;
-    --hp-accent-hover:  #6E9BF8;
-    --hp-accent-quiet:  rgba(78,130,245,.14);
-    --hp-focus-ring:    color-mix(in srgb, #4E82F5 55%, transparent);
+    --hp-accent:        #3D6DE4;
+    --hp-accent-hover:  #6188EC;
+    --hp-accent-quiet:  rgba(61,109,228,.14);
+    --hp-focus-ring:    color-mix(in srgb, #3D6DE4 55%, transparent);
 
     --hp-shadow-sm:  0 1px 2px rgba(0,0,0,.4);
     --hp-shadow-md:  0 2px 8px rgba(0,0,0,.45), 0 10px 30px rgba(0,0,0,.4);
     --hp-shadow-lg:  0 4px 14px rgba(0,0,0,.5), 0 26px 60px rgba(0,0,0,.5);
-    --hp-shadow-brand: 0 6px 22px rgba(46,107,240,.35), 0 20px 55px rgba(240,71,154,.22);
+    --hp-shadow-brand: 0 6px 22px rgba(61,109,228,.35), 0 20px 55px rgba(224,73,124,.22);
 
     --hp-success-bg: rgba(18,161,80,.14);
     --hp-warning-bg: rgba(199,119,0,.16);
     --hp-danger-bg:  rgba(229,72,77,.16);
-    --hp-info-bg:    rgba(78,130,245,.14);
+    --hp-info-bg:    rgba(61,109,228,.14);
   }
 }
 
 :root[data-theme="dark"] {
-  --hp-blue:    #4E82F5;
-  --hp-violet:  #A06EE6;
-  --hp-magenta: #F35B9E;
-  --hp-gradient:      linear-gradient(120deg, #2E6BF0 0%, #8B54DD 52%, #F0479A 100%);
-  --hp-gradient-soft: linear-gradient(120deg, rgba(78,130,245,.16), rgba(160,110,230,.16), rgba(243,91,158,.16));
-  --hp-gradient-text: linear-gradient(120deg, #4E82F5, #A06EE6, #F35B9E);
+  --hp-blue:    #3D6DE4;
+  --hp-violet:  #A84EBD;
+  --hp-magenta: #EC5C90;
+  --hp-gradient:      linear-gradient(120deg, #3D6DE4 0%, #A84EBD 52%, #E0497C 100%);
+  --hp-gradient-soft: linear-gradient(120deg, rgba(61,109,228,.16), rgba(168,78,189,.16), rgba(224,73,124,.16));
+  --hp-gradient-text: linear-gradient(120deg, #3D6DE4, #A84EBD, #EC5C90);
 
   --hp-bg:            var(--hp-ink-950);
   --hp-bg-elevated:   var(--hp-ink-900);
@@ -241,18 +247,18 @@
   --hp-border:        #262A35;
   --hp-border-strong: #333846;
 
-  --hp-accent:        #4E82F5;
-  --hp-accent-hover:  #6E9BF8;
-  --hp-accent-quiet:  rgba(78,130,245,.14);
-  --hp-focus-ring:    color-mix(in srgb, #4E82F5 55%, transparent);
+  --hp-accent:        #3D6DE4;
+  --hp-accent-hover:  #6188EC;
+  --hp-accent-quiet:  rgba(61,109,228,.14);
+  --hp-focus-ring:    color-mix(in srgb, #3D6DE4 55%, transparent);
 
   --hp-shadow-sm:  0 1px 2px rgba(0,0,0,.4);
   --hp-shadow-md:  0 2px 8px rgba(0,0,0,.45), 0 10px 30px rgba(0,0,0,.4);
   --hp-shadow-lg:  0 4px 14px rgba(0,0,0,.5), 0 26px 60px rgba(0,0,0,.5);
-  --hp-shadow-brand: 0 6px 22px rgba(46,107,240,.35), 0 20px 55px rgba(240,71,154,.22);
+  --hp-shadow-brand: 0 6px 22px rgba(61,109,228,.35), 0 20px 55px rgba(224,73,124,.22);
 
   --hp-success-bg: rgba(18,161,80,.14);
   --hp-warning-bg: rgba(199,119,0,.16);
   --hp-danger-bg:  rgba(229,72,77,.16);
-  --hp-info-bg:    rgba(78,130,245,.14);
+  --hp-info-bg:    rgba(61,109,228,.14);
 }

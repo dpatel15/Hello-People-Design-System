@@ -1,6 +1,6 @@
 # Hello People — Design System
 
-**More done. More human.**
+**Say hello to less busywork.**
 
 The single source of truth for the Hello People brand and product — so everything
 we make (website, social, decks, product UI) looks, sounds, and feels like *us*.
@@ -74,20 +74,19 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 ## Roadmap
 
 - [x] Brand foundation, voice & tone, visual language
-- [x] Design tokens (CSS + JSON)
-- [x] Logo — vector recreation (light / dark / mark)
-- [ ] Component library — buttons, cards, nav, forms, badges, sections (coded)
+- [x] Design tokens (CSS + JSON) — matched to the master logo
+- [x] Logo — master vectors (light / dark / mono / mark / favicon)
+- [x] Homepage — flagship page built on the system
+- [ ] Component library — buttons, cards, nav, forms, badges, sections (extracted from the homepage)
 - [ ] Living guidelines site (interactive, hosted)
-- [ ] Mono logo variants + favicon/app-icon set
 - [ ] Social media templates (IG / LinkedIn / ad creative)
 - [ ] Proposal & deck template
-- [ ] Website redesign built on the system
 
 ---
 
 ## Status
 
-`v0.1` — foundation. Colors are read from the supplied raster logo and will be
-matched exactly against the final master SVG (one-file swap, everything inherits).
+`v0.2` — foundation + flagship homepage. Colors matched exactly to the master
+logo SVG. Components get extracted from the homepage next.
 
 *Contributions follow the brand rules above — if it doesn't serve them, it doesn't ship.*

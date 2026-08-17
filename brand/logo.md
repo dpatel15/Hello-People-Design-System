@@ -6,16 +6,33 @@ Files live in [`/assets/logo`](../assets/logo).
 
 ## The assets
 
+**Lockup (mark + wordmark):**
+
 | File | Use |
 |---|---|
-| `hello-people-logo.svg` | Primary horizontal lockup — for **light** backgrounds |
-| `hello-people-logo-dark.svg` | Horizontal lockup — for **dark** backgrounds ("Hello" turns light) |
-| `hello-people-mark.svg` | Icon only (the two speech bubbles) — avatars, favicons, app icons, tight spaces |
+| `hello-people-logo.svg` | Primary — **light** backgrounds (default) |
+| `hello-people-logo-dark.svg` | **Dark** UI / near-black (brightened gradient for contrast) |
+| `hello-people-logo-onDark-exact.svg` | Dark, exact brand gradients — only when mandated |
+| `hello-people-logo-white.svg` | One-colour **white** (photos, merch, busy backgrounds) |
+| `hello-people-logo-black.svg` | One-colour **black** (print, invoices, stamps) |
 
-> **Status:** these SVGs are a faithful vector recreation of the supplied raster
-> logo. When the final master SVG arrives, it replaces these files 1:1 and the
-> wordmark text should be **converted to outlines** so it renders identically
-> without Poppins installed. (Right now the wordmark uses live Poppins text.)
+**Mark only (icon):**
+
+| File | Use |
+|---|---|
+| `hello-people-mark.svg` | Light backgrounds |
+| `hello-people-mark-dark.svg` | Dark backgrounds |
+| `hello-people-mark-white.svg` / `hello-people-mark-black.svg` | One-colour |
+
+**Favicon (square, padded):**
+
+| File | Use |
+|---|---|
+| `hello-people-favicon.svg` | Light tabs / app icon |
+| `hello-people-favicon-dark.svg` | Dark tabs / app icon |
+
+> **Status:** master SVGs (Clod Design). Text is **converted to outlines** — they
+> render identically anywhere, no fonts required. These are the production files.
 
 ---
 
@@ -49,12 +66,12 @@ Files live in [`/assets/logo`](../assets/logo).
 
 ---
 
-## Single-color / mono (to be added)
+## Single-color / mono
 
 For one-color contexts (engraving, faxable docs, a partner's dark UI, watermarks):
-- **Mono dark:** entire logo in Ink `#1B1E27`.
-- **Mono light:** entire logo in `#FFFFFF`.
-- Keep the shapes; drop the gradient. *(Mono SVGs will be added to `/assets/logo`.)*
+- **Mono black** → `hello-people-logo-black.svg` (`#14161A`).
+- **Mono white** → `hello-people-logo-white.svg`.
+- Same shapes, gradient dropped. Use these instead of recoloring the full-color logo.
 
 ---
 
@@ -73,9 +90,9 @@ For one-color contexts (engraving, faxable docs, a partner's dark UI, watermarks
 
 ## Favicon / app icon
 
-Use the **mark** (`hello-people-mark.svg`) on a Paper `#FAFAFC` (light) or Ink
-`#0C0D12` (dark) rounded square. Keep generous padding so the bubbles don't touch
-the edges.
+Use the ready-made square, padded favicons: `hello-people-favicon.svg` (light)
+and `hello-people-favicon-dark.svg` (dark). They already have correct padding so
+the bubbles don't touch the edges.
 
 ---
 
