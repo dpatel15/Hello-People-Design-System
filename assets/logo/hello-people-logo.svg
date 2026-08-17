@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" role="img" aria-label="Hello People">
+  <defs>
+    <linearGradient id="hpBubble" x1="188" y1="34" x2="92" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E62E80"/>
+      <stop offset="0.52" stop-color="#9B3BBE"/>
+      <stop offset="1" stop-color="#5B3BD4"/>
+    </linearGradient>
+    <linearGradient id="hpRing" x1="54" y1="34" x2="54" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2E6BF0"/>
+      <stop offset="1" stop-color="#1B49CE"/>
+    </linearGradient>
+    <linearGradient id="hpPeople" x1="250" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F5CE6"/>
+      <stop offset="0.5" stop-color="#7B3FD0"/>
+      <stop offset="1" stop-color="#E62E80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark -->
+  <g transform="translate(0,22)">
+    <path d="M112,12 L166,12 Q188,12 188,34 L188,86 Q188,108 166,108 L164,108 L179,131 L150,108 L112,108 Q90,108 90,86 L90,34 Q90,12 112,12 Z" fill="url(#hpBubble)"/>
+    <text x="149" y="75" text-anchor="middle" font-family="Poppins, 'Segoe UI', system-ui, sans-serif" font-weight="700" font-size="47" letter-spacing="1.5" fill="#FFFFFF">AI</text>
+    <path d="M31,84 L15,110 L49,92 Z" fill="#2357E6"/>
+    <circle cx="54" cy="56" r="40" fill="none" stroke="url(#hpRing)" stroke-width="13"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Poppins, 'Segoe UI', system-ui, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="248" y="92" font-size="78" fill="#1B1E27">Hello</text>
+    <text x="248" y="170" font-size="78" fill="url(#hpPeople)">People<tspan fill="#E62E80">.</tspan></text>
+  </g>
+</svg>
