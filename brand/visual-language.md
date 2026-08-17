@@ -31,22 +31,27 @@ It runs **blue → violet → magenta**: cool to warm, machine to human. That
 direction is the story — never reverse it arbitrarily. It lives in exactly one
 token so it's identical on the site, a deck, and a social post.
 
-**Where the gradient is allowed:**
-- ✅ One primary CTA per screen
-- ✅ A single hero accent (a headline word, a rule, a key icon/graphic)
-- ✅ The logo's "AI" bubble and the "." in the wordmark
-- ✅ A soft, low-opacity wash (`--hp-gradient-soft`) behind a feature block — sparingly
+**Where the gradient is allowed (reserved list — nowhere else):**
+- ✅ The **logo** (it lives in the mark and wordmark)
+- ✅ **One** hero brand moment per page — a payoff panel, a key graphic
+- ✅ The **closing CTA band** at the bottom of a page
+
+Everything else — buttons, headlines, links, icons, numbers, stats, step markers
+— uses **solid Link Blue** (`--hp-blue`). The primary blue is the workhorse; the
+gradient is the reward.
 
 **Where it is banned:**
-- ❌ Full-page or full-section solid gradient backgrounds
-- ❌ On top of small body text (illegible; use it for display only)
-- ❌ More than one strong gradient element competing in the same view
+- ❌ Full-page or full-section gradient backgrounds (except the single CTA band)
+- ❌ Buttons, headlines, and body text (use solid blue / ink)
+- ❌ On top of small text (illegible; display-size only)
+- ❌ More than one gradient moment competing in the same view
 
-### The 90 / 10 rule
+### The 95 / 5 rule
 
-Roughly **90%** of any surface is flat — ink, paper, one solid color. The gradient
-earns the other **~10%.** This single discipline is what separates a confident,
-premium brand from the generic "AI slop" look. When in doubt, use less.
+Roughly **95%** of any surface is flat — ink, paper, solid blue. The gradient
+earns the other **~5%,** in the reserved spots above. This restraint is the single
+biggest thing separating a confident, premium brand from the generic "AI slop"
+look. When in doubt, use solid blue.
 
 ### Accessibility (non-negotiable)
 

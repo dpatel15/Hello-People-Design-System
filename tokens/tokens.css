@@ -196,17 +196,17 @@
 
     --hp-bg:            var(--hp-ink-950);
     --hp-bg-elevated:   var(--hp-ink-900);
-    --hp-surface:       #14161E;
-    --hp-surface-2:     #1B1E28;
-    --hp-surface-inset: #20242F;
+    --hp-surface:       #20242E;
+    --hp-surface-2:     #191C24;
+    --hp-surface-inset: #272C37;
 
     --hp-text:          #F2F3F8;
     --hp-text-strong:   #FFFFFF;
     --hp-text-muted:    #9195A3;
     --hp-text-subtle:   #6B6F7D;
 
-    --hp-border:        #262A35;
-    --hp-border-strong: #333846;
+    --hp-border:        #2F333E;
+    --hp-border-strong: #3B4150;
 
     --hp-accent:        #3D6DE4;
     --hp-accent-hover:  #6188EC;
@@ -235,17 +235,17 @@
 
   --hp-bg:            var(--hp-ink-950);
   --hp-bg-elevated:   var(--hp-ink-900);
-  --hp-surface:       #14161E;
-  --hp-surface-2:     #1B1E28;
-  --hp-surface-inset: #20242F;
+  --hp-surface:       #20242E;
+  --hp-surface-2:     #191C24;
+  --hp-surface-inset: #272C37;
 
   --hp-text:          #F2F3F8;
   --hp-text-strong:   #FFFFFF;
   --hp-text-muted:    #9195A3;
   --hp-text-subtle:   #6B6F7D;
 
-  --hp-border:        #262A35;
-  --hp-border-strong: #333846;
+  --hp-border:        #2F333E;
+  --hp-border-strong: #3B4150;
 
   --hp-accent:        #3D6DE4;
   --hp-accent-hover:  #6188EC;
