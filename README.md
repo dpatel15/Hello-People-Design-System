@@ -21,7 +21,8 @@ Hello-People-Design-System/
 │   ├── voice-and-tone.md         ← how we write
 │   ├── logo.md                   ← logo usage, clear space, don'ts
 │   ├── social.md                 ← social system rules (both families)
-│   └── deck.md                   ← deck system, slide types + chart rules
+│   ├── deck.md                   ← deck system, slide types + chart rules
+│   └── icons.md                  ← icon system, grid + rules
 ├── tokens/                       ← the machine-readable design decisions
 │   ├── tokens.css                ← CSS custom properties (use these in code)
 │   └── tokens.json               ← platform-agnostic tokens (Figma / Tailwind / native)
@@ -32,8 +33,10 @@ Hello-People-Design-System/
 │   ├── guidelines.html           ← living, interactive style guide (open this!)
 │   ├── social.html               ← social templates, minimal kit
 │   ├── social-structured.html    ← social templates, structured kit (warped grid)
-│   └── deck.html                 ← deck system, 24 slide types (16:9)
+│   ├── deck.html                 ← deck system, 24 slide types (16:9)
+│   └── icons.html                ← icon showcase (24 brand + UI icons)
 └── assets/
+    ├── icons/                   ← 24 brand + UI icons (24px, 2px, currentColor)
     ├── fonts/hello-people-fonts.css  ← embedded Poppins + Inter (offline-ready)
     └── logo/                     ← the logo, in vector
         ├── hello-people-logo.svg / -dark / -white / -black
@@ -92,6 +95,8 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 - [x] Social media system, two families (minimal + structured), 11 templates,
       reusable warped-grid background SVGs (`web/social*.html`, `assets/social/`)
 - [x] Deck system, 24 slide types incl. charts (`web/deck.html`, `brand/deck.md`)
+- [x] Icon system, 24 brand + UI icons + Lucide (`assets/icons/`, `brand/icons.md`, `web/icons.html`)
+- [ ] Extract website components/sections into `components.css`
 - [ ] Refactor homepage onto `components.css` classes
 
 ---
