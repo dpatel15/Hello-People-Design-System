@@ -36,7 +36,7 @@ Hello-People-Design-System/
 │   ├── deck.html                 ← deck system, 24 slide types (16:9)
 │   └── icons.html                ← icon showcase (24 brand + UI icons)
 └── assets/
-    ├── icons/                   ← 24 brand + UI icons (24px, 2px, currentColor)
+    ├── icons/                   ← brand/ (24 hp- icons) + lucide/ (2,025 icons)
     ├── fonts/hello-people-fonts.css  ← embedded Poppins + Inter (offline-ready)
     └── logo/                     ← the logo, in vector
         ├── hello-people-logo.svg / -dark / -white / -black
@@ -95,7 +95,8 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 - [x] Social media system, two families (minimal + structured), 11 templates,
       reusable warped-grid background SVGs (`web/social*.html`, `assets/social/`)
 - [x] Deck system, 24 slide types incl. charts (`web/deck.html`, `brand/deck.md`)
-- [x] Icon system, 24 brand + UI icons + Lucide (`assets/icons/`, `brand/icons.md`, `web/icons.html`)
+- [x] Icon system, 24 brand icons + full Lucide library (2,025), searchable browser
+      (`assets/icons/`, `brand/icons.md`, `web/icons.html`)
 - [ ] Extract website components/sections into `components.css`
 - [ ] Refactor homepage onto `components.css` classes
 
