@@ -19,7 +19,9 @@ Hello-People-Design-System/
 │   ├── foundation.md             ← the idea, personality, taglines, how people should FEEL
 │   ├── visual-language.md        ← color & type meaning, the 95/5 rule, space, motion
 │   ├── voice-and-tone.md         ← how we write
-│   └── logo.md                   ← logo usage, clear space, don'ts
+│   ├── logo.md                   ← logo usage, clear space, don'ts
+│   ├── social.md                 ← social system rules (both families)
+│   └── deck.md                   ← deck system, slide types + chart rules
 ├── tokens/                       ← the machine-readable design decisions
 │   ├── tokens.css                ← CSS custom properties (use these in code)
 │   └── tokens.json               ← platform-agnostic tokens (Figma / Tailwind / native)
@@ -96,7 +98,10 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 
 ## Status
 
-`v0.3`, foundation, tokens, master logo, flagship homepage, component library,
-and a living guidelines site. Next: social templates + proposal/deck.
+`v0.6`, the core system is complete: foundation + voice, tokens, master logo,
+flagship homepage, component library, living guidelines site, a two-family social
+system with reusable backgrounds, and a 24-type deck system. Optional extras next
+(email signature, one-pager). One internal cleanup left: refactor the homepage
+onto `components.css`.
 
 *Contributions follow the brand rules above, if it doesn't serve them, it doesn't ship.*
