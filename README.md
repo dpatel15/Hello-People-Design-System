@@ -30,7 +30,7 @@ Hello-People-Design-System/
 │   ├── guidelines.html           ← living, interactive style guide (open this!)
 │   ├── social.html               ← social templates, minimal kit
 │   ├── social-structured.html    ← social templates, structured kit (warped grid)
-│   └── deck.html                 ← post-audit proposal deck (9 slides, 16:9)
+│   └── deck.html                 ← deck system, 24 slide types (16:9)
 └── assets/
     ├── fonts/hello-people-fonts.css  ← embedded Poppins + Inter (offline-ready)
     └── logo/                     ← the logo, in vector
@@ -89,7 +89,7 @@ Fonts to load: **Poppins** (600/700/800) + **Inter** (400/500/600).
 - [x] Living guidelines site, interactive style guide (`web/guidelines.html`)
 - [x] Social media system, two families (minimal + structured), 11 templates,
       reusable warped-grid background SVGs (`web/social*.html`, `assets/social/`)
-- [x] Proposal / deck template, 9-slide post-audit deck (`web/deck.html`)
+- [x] Deck system, 24 slide types incl. charts (`web/deck.html`, `brand/deck.md`)
 - [ ] Refactor homepage onto `components.css` classes
 
 ---
