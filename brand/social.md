@@ -54,6 +54,13 @@ to white). Emphasis words can also be bold or bold-italic Poppins.
    outline, placed at the bottom (see the Testimonial and Meme templates).
 8. **Contrast holds.** White or ink text only on solid color or the gradient,
    never small text on a busy image.
+9. **Contextual illustration fills empty space.** When a slide has an open band
+   (e.g. under a numbered carousel point, or a CTA), drop in ONE faint line
+   illustration that matches that slide's message, in the brand icon language
+   (24px grid, rounded). Fixed treatment: **0.3px stroke, 15% opacity** (the same
+   on light and dark slides), brand blue on light, white on blue. It fills the
+   gap and adds context without pulling the eye. Skip it where the slide is
+   already full. See `../social/` for the generator and locked rules.
 
 ## Caption starters (brand voice)
 
