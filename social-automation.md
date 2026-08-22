@@ -97,3 +97,79 @@ Alternative: Publer (also supports Stories, cheaper paid tier). Same workflow.
 
 Each Friday we keep what worked, cut what did not, and let next week's topics lean
 toward the angles that pulled leads.
+
+---
+
+# Growth system (v2): what a full week now produces
+
+Each weekly cycle the brain generates, for one chosen topic:
+
+1. **7 daily post sets**, copy tailored to Instagram (feed + story), Facebook,
+   LinkedIn, and X.
+2. **7 daily branded images / carousels** from the design system (`social/`).
+3. **7 daily Reel scripts** (see `social/reel-scripts-*.md`), mixed for reach and
+   leads: about 4 educational, 2 lead-focused, 1 pure-reach per week.
+4. **Alt text** for every image.
+5. **Tracking links** (UTM) for anything pointing at the site.
+
+You approve the week in the sheet; Metricool publishes daily at 8am; you (or a
+teammate) film the Reels from the scripts.
+
+## Content pillars (so weeks never repeat and always sell)
+
+Every topic maps to one of four pillars, and a good week uses all four:
+
+1. **Teach** (educational): how AI works in a real business day. Builds authority,
+   earns saves and shares.
+2. **Prove** (before/after, cases, numbers): real outcomes. Builds trust.
+3. **Bust** (myths and objections): "AI won't replace your team." Removes fear.
+4. **Invite** (offers and lead magnets): "comment AUDIT." Converts attention.
+
+Rough mix per week: 40% Teach, 25% Prove, 20% Bust, 15% Invite.
+
+### Topic bank (starter, rotate and add)
+
+AI receptionist / missed calls, invoice chasing, lead follow-up speed, no-show
+reminders, review requests, onboarding paperwork, inbox triage, quote and
+estimate generation, appointment booking, data entry between apps, FAQ answering,
+after-hours coverage, seasonal rush handling, "what to automate first," cost of
+busywork, AI myths, human vs machine work, small-team productivity.
+
+## The seven growth initiatives (execution plan)
+
+Priority order, most leads first:
+
+| # | Initiative | What it is | Tool | Status |
+|---|---|---|---|---|
+| 1 | **Auto-DM** | Comment "AUDIT" triggers an instant DM with the lead magnet | ManyChat (free) | to set up |
+| 2 | **Lead magnet** | One-page "5 tasks to automate first" checklist (on brand) | Design system | to build |
+| 3 | **Daily Reels** | 7 scripts a week, filmed and posted | Scripts done weekly | scripts ready |
+| 4 | **Tracking links** | UTM / short links so we tie posts to booked audits | Bitly or /go links | to set up |
+| 5 | **First-comment link** | Auto-post the link as the first comment on IG | Metricool / ManyChat | to set up |
+| 6 | **Pillars + topic bank** | Funnel-balanced topics, no repeats | This doc | done |
+| 7 | **Alt text** | Accessibility + small reach bump, on every image | Engine | to add to engine |
+
+### Phased rollout
+
+- **Phase 1 (this week):** build the lead magnet (#2), set up the auto-DM keyword
+  flow (#1), and wire the weekly Routine + Metricool. This gets a review-gated,
+  lead-capturing system live.
+- **Phase 2:** add tracking links (#4) and first-comment automation (#5), start
+  filming the daily Reels from the scripts (#3).
+- **Phase 3:** add alt text to the engine (#7), and let Friday reporting steer the
+  pillar mix. Pillars and topic bank (#6) are already in place.
+
+## Reel script format (what the brain writes each week)
+
+For each day: a 2 second hook (on screen + spoken), the shooting format
+(talking head / screen recording / text-on-screen), the spoken script,
+beat-by-beat on-screen captions, a CTA tied to the lead mechanic, the post caption,
+and hashtags. See `social/reel-scripts-week-ai-in-real-life.md` for the worked
+example week.
+
+## The lead loop (how a view becomes a booked audit)
+
+Reel or post (hook) -> "comment AUDIT" -> **auto-DM sends the checklist** ->
+checklist ends with "book your free audit" (tracked link) -> booked audit. Every
+piece of content feeds this one loop, so the whole week compounds into leads, not
+just likes.
