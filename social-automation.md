@@ -161,11 +161,14 @@ Priority order, most leads first:
 
 ## Reel script format (what the brain writes each week)
 
-For each day: a 2 second hook (on screen + spoken), the shooting format
-(talking head / screen recording / text-on-screen), the spoken script,
-beat-by-beat on-screen captions, a CTA tied to the lead mechanic, the post caption,
+Reel scripts are written to be spoken authentically, not read off a teleprompter.
+They are founder-led talking points, first person, helping one real person, so
+they sound like you and not like an ad. For each day: what you genuinely believe
+about the topic, a real 2 second hook, the shooting format (talking head / screen
+recording / text-on-screen), loose talking points in your own words, an honest
+CTA tied to the lead mechanic (offered as a gift, not a pitch), the post caption,
 and hashtags. See `social/reel-scripts-week-ai-in-real-life.md` for the worked
-example week.
+example week and the delivery notes.
 
 ## The lead loop (how a view becomes a booked audit)
 
