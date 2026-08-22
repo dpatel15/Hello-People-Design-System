@@ -4,6 +4,14 @@ The engine that turns one topic a week into a full week of on-brand posts across
 Instagram (feed + story), Facebook, LinkedIn, and X, aimed at engagement,
 followers, and leads. Say hello to less busywork, including our own.
 
+## Where things live (two repos, kept separate)
+
+- **This repo (design system)** holds the MACHINE: the generator (`social/`), the
+  brand and voice rules, and this plan. Stable, rarely changes.
+- **dpatel15/hellopeople-social** holds the OUTPUT: one folder per week
+  (`weeks/<date>/` with content.csv, reel-scripts.md, images/). The weekly Routine
+  writes there, never here, so the design system stays clean.
+
 ## The model: one brain, one publisher
 
 We split the system in two, because generating and publishing have very
