@@ -1,10 +1,21 @@
 const { chromium } = require('/opt/node22/lib/node_modules/playwright/index.js');
 const fs = require('fs');
-const dims = {
-  '01-post-mon':[1080,1080],'02-story-mon':[1080,1920],'03-beforeafter-tue':[1080,1080],
-  '04-carousel-1-cover':[1080,1350],'05-carousel-2':[1080,1350],'06-carousel-3':[1080,1350],
-  '07-carousel-4':[1080,1350],'08-carousel-5-cta':[1080,1350]
-};
+// Auto-size each .html file by its filename suffix.
+// Naming convention: use "-story" for 1080x1920, "-beforeafter" or "-post" for
+// 1080x1080, "-carousel-*", "-cover", "-item", "-cta", or "-code" for 1080x1350.
+const CAROUSEL = [1080,1350], STORY = [1080,1920], SQUARE = [1080,1080];
+function pickDims(base){
+  const n = base.toLowerCase();
+  if (n.includes('-story')) return STORY;
+  if (n.includes('-beforeafter') || n.includes('-post')) return SQUARE;
+  return CAROUSEL;
+}
+const dims = {};
+for (const f of fs.readdirSync('.').sort()) {
+  if (!f.endsWith('.html')) continue;
+  const base = f.replace(/\.html$/,'');
+  dims[base] = pickDims(base);
+}
 (async () => {
   const b = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
   for (const [name,[w,h]] of Object.entries(dims)) {

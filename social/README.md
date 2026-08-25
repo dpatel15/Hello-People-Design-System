@@ -8,8 +8,13 @@ design work. Pairs with the copy engine in `../social-automation.md`.
 
 ```bash
 cd social
-python3 generate.py      # writes the slide HTML
-node render.cjs          # renders each to PNG at native size (2x)
+python3 generate.py                          # writes the slide HTML
+node render.cjs                              # renders each to PNG at 2x
+
+# Build a self-contained review board for a weekly output folder:
+python3 build_week_viewer.py <week-dir> <jszip.min.js>
+# and a slim printable/emailable PDF:
+python3 build_week_printable.py <week-dir>
 ```
 
 Assets are pulled from the canonical design system (no copies):
@@ -18,7 +23,7 @@ background (`../assets/social/backgrounds/hello-people-bg-grid-ribbons.svg`), an
 the logo (`../assets/logo/`). Example output lives in
 `../assets/social/examples/`.
 
-## Formats
+## Formats (IG-native only)
 
 | Slide | Size |
 |---|---|
@@ -32,19 +37,42 @@ the logo (`../assets/logo/`). Example output lives in
 1. **Warped grid background** with a soft center wash for legible text.
 2. **Poppins 800 headline**, key words in a solid-blue highlight block (`.hl`);
    white highlight on the blue CTA slide. Body in Inter.
-3. **Contextual line illustration** to fill an empty band, one per slide, matching
-   that slide's message. Skip it where the slide is already full.
+3. **Vertical alignment: center-then-expand.** Content sits vertically centered
+   in the space between the top padding and the pinned bottom footer. Short
+   content stays middle, longer content grows outward from the middle. Never
+   top-anchor content just because there is empty room below. Covers keep the
+   "Swipe" cue at the bottom-left so the hook signal stays.
+4. **Logo + handle on every slide.** The Hello People logo mark and the handle
+   `@dhairyapatel.official` appear at the bottom of every slide, carousel or
+   story, cover or CTA. White logo variant on the blue CTA slide.
+5. **Contextual line illustration** to fill an empty band, one per slide,
+   matching that slide's message. On carousels, anchor it to the LOWER band
+   (roughly `bottom: 180-190px`) so it never sits next to or behind the copy.
+   Stories keep their own placement. Skip it where the slide is already full
+   (e.g. the before/after data card).
    - **stroke width: 0.3px** (fine hairline)
    - **opacity: 15%**, the same on light and dark slides
-   - drawn in the brand icon language (24px grid, rounded), brand blue on light,
-     white on blue.
-4. **95 / 5 color:** solid blue does the work; the gradient stays a cover-only
-   treat. Every slide signs off with the logo and `@hellopeople_agency`.
-5. **Copy** follows `../brand/voice-and-tone.md`: plain, human, **no em or en
+   - drawn in the brand icon language (24px grid, rounded), brand blue on
+     light, white on blue.
+6. **95 / 5 color:** solid blue does the work; the gradient stays a
+   cover-only treat.
+7. **Copy** follows `../brand/voice-and-tone.md`: plain, human, **no em or en
    dashes**, one idea per slide, a lead-focused CTA.
+
+## Weekly output (downloadability)
+
+The weekly viewer built by `build_week_viewer.py` embeds every full-resolution
+image as a data URI. Every image is one-click downloadable, and a "Download all
+images (ZIP)" button at the top of the page packages the whole week (JSZip
+embedded inline, works offline in any browser).
+
+`build_week_printable.py` produces a slim (~1-2 MB) printable/emailable PDF of
+the same week: thumbnails + all copy + all reel scripts. Full-res images stay
+in `weeks/<date>/images/` and are downloadable from `week.html`.
 
 ## Adding a new illustration
 
-Add a path to the `P{}` dictionary in `generate.py`, keyed by topic (a Lucide-style
-24px line icon works perfectly), then reference it with `illo("name", "...position")`.
-It automatically inherits the 0.3px / 15% treatment.
+Add a path to the `P{}` dictionary in `generate.py`, keyed by topic (a
+Lucide-style 24px line icon works perfectly), then reference it with
+`illo("name", "...position")`. It automatically inherits the 0.3px / 15%
+treatment.

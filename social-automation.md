@@ -74,8 +74,9 @@ Alternative: Publer (also supports Stories, cheaper paid tier). Same workflow.
 - **One idea per post.** If it needs two headlines, it is two posts.
 - **Design:** build images from the social kit (`brand/social.md`,
   `web/social-structured.html`, `web/social.html`). Solid blue does the work; the
-  gradient is a cover-only treat. Always sign off with the logo and
-  `@hellopeople_agency`.
+  gradient is a cover-only treat. Content is vertically centered per slide
+  (center-then-expand). Every slide signs off with the logo + handle
+  `@dhairyapatel.official` at the bottom.
 - **Every post earns its keep:** a hook in the first line, one clear idea, and a
   CTA that moves toward a lead (book an audit, comment a keyword, DM us).
 - **Platform fit:** LinkedIn longer and professional, X short and punchy, IG

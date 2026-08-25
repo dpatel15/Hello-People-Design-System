@@ -48,7 +48,10 @@ to white). Emphasis words can also be bold or bold-italic Poppins.
 3. **Poppins for the statement, Inter for the rest.** Big, confident headline.
 4. **Voice.** Plain and human, sell the outcome, no buzzwords, no dashes. See
    `voice-and-tone.md`.
-5. **Always sign off** with the logo and `@hellopeople_agency` (or `hellopeople.ca`).
+5. **Sign off on every slide.** The Hello People logo mark + the handle
+   `@dhairyapatel.official` (founder-led social strategy) appear at the bottom
+   of every slide, carousel or story, cover or CTA. White logo on the blue CTA
+   slide.
 6. **Safe zone.** On Stories/Reels keep text clear of the top and bottom ~250px.
 7. **Photos:** background-removed, black-and-white cut-out with a subtle white
    outline, placed at the bottom (see the Testimonial and Meme templates).
