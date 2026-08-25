@@ -56,6 +56,13 @@ the logo (`../assets/logo/`). Example output lives in
      light, white on blue.
 6. **95 / 5 color:** solid blue does the work; the gradient stays a
    cover-only treat.
+7. **Grid rhythm: white, white, BLUE.** Instagram shows posts in a 3-column
+   grid. To make the profile grid read as calm, calm, punch, every third
+   carousel COVER is the solid brand-blue variant (the CTA-style look); the
+   two before it are the standard warped-grid white with blue accents.
+   Repeat down the grid. Stories do not participate. For a 7-day posting
+   week, plan the day order so positions 3 and 6 hold content that earns the
+   attention (Prove/case-study or Invite/lead-magnet days).
 7. **Copy** follows `../brand/voice-and-tone.md`: plain, human, **no em or en
    dashes**, one idea per slide, a lead-focused CTA.
 

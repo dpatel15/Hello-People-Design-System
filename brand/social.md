@@ -52,6 +52,10 @@ to white). Emphasis words can also be bold or bold-italic Poppins.
    `@dhairyapatel.official` (founder-led social strategy) appear at the bottom
    of every slide, carousel or story, cover or CTA. White logo on the blue CTA
    slide.
+6. **Grid rhythm: white, white, BLUE.** Instagram shows posts in a 3-column
+   grid. Every third carousel COVER is the solid brand-blue variant, the two
+   before it are the standard warped-grid white with blue accents. The profile
+   grid then reads as calm, calm, punch. Stories do not participate.
 6. **Safe zone.** On Stories/Reels keep text clear of the top and bottom ~250px.
 7. **Photos:** background-removed, black-and-white cut-out with a subtle white
    outline, placed at the bottom (see the Testimonial and Meme templates).
