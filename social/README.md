@@ -42,9 +42,13 @@ the logo (`../assets/logo/`). Example output lives in
    content stays middle, longer content grows outward from the middle. Never
    top-anchor content just because there is empty room below. Covers keep the
    "Swipe" cue at the bottom-left so the hook signal stays.
-4. **Logo + handle on every slide.** The Hello People logo mark and the handle
-   `@dhairyapatel.official` appear at the bottom of every slide, carousel or
-   story, cover or CTA. White logo variant on the blue CTA slide.
+4. **Logo on every slide; handle splits by role.** The Hello People logo mark
+   appears at the bottom of every slide. The handle text splits:
+   - **Regular slides** (cover, numbered content, code, story) sign off with
+     `@dhairyapatel.official` (personal, where reach lives).
+   - **CTA slides and lead-magnet PDF footer** sign off with `@hellopeople.ca`
+     (company, where the lead lands).
+   White logo variant on the blue CTA slide.
 5. **Contextual line illustration** to fill an empty band, one per slide,
    matching that slide's message. On carousels, anchor it to the LOWER band
    (roughly `bottom: 180-190px`) so it never sits next to or behind the copy.

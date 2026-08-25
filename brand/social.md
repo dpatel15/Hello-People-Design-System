@@ -48,10 +48,11 @@ to white). Emphasis words can also be bold or bold-italic Poppins.
 3. **Poppins for the statement, Inter for the rest.** Big, confident headline.
 4. **Voice.** Plain and human, sell the outcome, no buzzwords, no dashes. See
    `voice-and-tone.md`.
-5. **Sign off on every slide.** The Hello People logo mark + the handle
-   `@dhairyapatel.official` (founder-led social strategy) appear at the bottom
-   of every slide, carousel or story, cover or CTA. White logo on the blue CTA
-   slide.
+5. **Sign off on every slide; handle splits by role.** The Hello People logo
+   mark appears at the bottom of every slide. Regular slides (cover, numbered,
+   code, story) sign off with `@dhairyapatel.official` (personal, for reach).
+   CTA slides and the lead-magnet PDF footer sign off with `@hellopeople.ca`
+   (company, for capture). White logo on the blue CTA slide.
 6. **Grid rhythm: white, white, BLUE.** Instagram shows posts in a 3-column
    grid. Every third carousel COVER is the solid brand-blue variant, the two
    before it are the standard warped-grid white with blue accents. The profile

@@ -26,7 +26,8 @@
 #      for single feed posts and before/after data cards.
 #   7. Copy follows brand voice: plain, human, no em/en dashes, lead CTA.
 # =============================================================================
-HANDLE = "@dhairyapatel.official"
+HANDLE = "@dhairyapatel.official"       # regular sign-off (personal, for reach)
+HANDLE_CTA = "@hellopeople.ca"           # CTA / lead-magnet sign-off (company, for capture)
 
 CSS = """
 @import "../assets/fonts/hello-people-fonts-social.css";
@@ -92,21 +93,22 @@ def illo(name, style):
 SWIPE_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 TICK='<span class="tick" style="width:52px;height:52px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>'
 
-def foot(white=False, with_swipe=False):
+def foot(white=False, with_swipe=False, handle=None):
     lg = "../assets/logo/hello-people-logo-white.svg" if white else "../assets/logo/hello-people-logo.svg"
     swipe = f'<span class="swipe">Swipe {SWIPE_SVG}</span>' if with_swipe else ''
-    return f'<div class="foot"><img src="{lg}"><span class="handle">{HANDLE}</span>{swipe}</div>'
+    h = handle if handle is not None else HANDLE
+    return f'<div class="foot"><img src="{lg}"><span class="handle">{h}</span>{swipe}</div>'
 
 # Every slide is built through frame(): consistent padding, centered stage,
 # pinned bottom footer with the logo + handle (rules 3 and 4 above).
-def frame(w, h, pad, stage_inner, cls="", extra="", white_foot=False, with_swipe=False):
+def frame(w, h, pad, stage_inner, cls="", extra="", white_foot=False, with_swipe=False, handle=None):
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}
 .slide{{width:{w}px;height:{h}px}}</style></head>
 <body><div class="slide {cls}"><div class="bg"></div><div class="wash"></div>
 {extra}
 <div class="c" style="padding:{pad}">
   <div class="stage">{stage_inner}</div>
-  {foot(white=white_foot, with_swipe=with_swipe)}
+  {foot(white=white_foot, with_swipe=with_swipe, handle=handle)}
 </div></div></body></html>"""
 
 CW,CH = 1080,1350   # carousel
@@ -154,7 +156,7 @@ def carousel_cta(headline_html, sub, keyword, ill="audit"):
     </div>"""
     return frame(CW, CH, "96px 84px 84px", inner, cls="slide--blue",
                  extra=illo(ill, "right:70px;bottom:180px;width:300px;height:300px"),
-                 white_foot=True)
+                 white_foot=True, handle=HANDLE_CTA)
 
 def story_slide(eyebrow_text, headline_html, body, ill=None):
     ex = illo(ill, "right:70px;top:70%;transform:translateY(-50%);width:280px;height:280px") if ill else ""
