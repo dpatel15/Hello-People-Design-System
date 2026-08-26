@@ -31,7 +31,7 @@ the logo (`../assets/logo/`). Example output lives in
 | Instagram story | 1080 x 1920 (safe zone: keep content clear of top/bottom ~300px) |
 | Carousel (cover, content, CTA) | 1080 x 1350 |
 | Before / after data card | 1080 x 1080 |
-| Reel cover (Instagram thumbnail) | 1080 x 1920, photo cutout of founder anchored bottom-right, hook headline on the left |
+| Reel cover (Instagram thumbnail) | 1080 x 1920, centered layout: eyebrow tag centered on top, big Poppins hook centered under it, big photo cutout of founder in the middle, subheading centered below, logo + handle centered at the bottom. One hero photo used across a whole week for recognition. |
 
 ## Locked visual rules (the standard, do not drift)
 

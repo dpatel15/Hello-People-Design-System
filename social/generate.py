@@ -168,26 +168,42 @@ def story_slide(eyebrow_text, headline_html, body, ill=None):
     </div>"""
     return frame(SW, SH, "220px 84px 220px", inner, extra=ex)
 
-def reel_cover(eyebrow_text, headline_html, sub, photo_path):
+def reel_cover(eyebrow_text, headline_html, sub, photo_path, blue=False):
     """
     Reel cover image (1080x1920). The thumbnail Instagram shows on the Reels
-    tab. Photo cutout of the founder anchored bottom-right, big Poppins hook
-    on the left, small eyebrow tag at the top, logo + handle at the
-    bottom-left. Photos live outside the design system (they are personal
-    assets); pass an absolute file:// path.
+    tab and (when share-to-feed is on) on the main grid.
+
+    CENTERED layout: eyebrow at top center, big Poppins hook centered, big
+    photo cutout of the founder in the middle, subheading centered below,
+    logo + handle centered at the bottom. Photo dominates the middle so the
+    face is the first thing the eye finds; text frames the photo top and
+    bottom.
+
+    Photos live outside the design system (they are personal assets); pass an
+    absolute file:// path. Set blue=True on the ~1/3 of covers that should
+    carry the punch tile of the profile grid.
     """
-    photo_layer = (
-      f'<div style="position:absolute;right:-30px;bottom:120px;width:640px;height:1200px;z-index:1;pointer-events:none">'
-      f'<img src="file://{photo_path}" style="width:100%;height:100%;object-fit:contain;object-position:right bottom;filter:drop-shadow(0 0 24px rgba(29,80,207,.25))">'
-      f'</div>'
-    )
-    inner = f"""
-    <div style="max-width:640px">
-      <span class="eyebrow" style="font-size:26px">{eyebrow_text}</span>
-      <h1 style="font-size:96px;margin-top:26px">{headline_html}</h1>
-      <p class="body" style="font-size:30px;margin-top:32px;line-height:1.4;max-width:16ch">{sub}</p>
-    </div>"""
-    return frame(SW, SH, "260px 84px 200px", inner, extra=photo_layer)
+    cls = "slide--blue" if blue else ""
+    logo = "../assets/logo/hello-people-logo-white.svg" if blue else "../assets/logo/hello-people-logo.svg"
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}
+.slide{{width:{SW}px;height:{SH}px}}
+.rc-wrap{{position:absolute;inset:0;padding:120px 60px 80px;display:flex;flex-direction:column;align-items:center;text-align:center;z-index:2}}
+.rc-photo{{flex:1;display:flex;align-items:center;justify-content:center;width:100%;margin:20px 0 10px}}
+.rc-photo img{{max-height:1050px;max-width:820px;object-fit:contain;filter:drop-shadow(0 0 30px rgba(29,80,207,.28))}}
+.rc-foot{{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;margin-top:26px;position:relative;z-index:3}}
+.rc-foot img{{height:44px}}
+.rc-foot .handle{{font-weight:600;color:var(--muted);font-size:22px}}
+.slide--blue .rc-foot .handle{{color:#c7d6f7}}
+</style></head>
+<body><div class="slide {cls}"><div class="bg"></div><div class="wash"></div>
+<div class="rc-wrap">
+  <span class="eyebrow" style="font-size:26px">{eyebrow_text}</span>
+  <h1 style="font-size:96px;margin-top:22px">{headline_html}</h1>
+  <div class="rc-photo"><img src="file://{photo_path}"></div>
+  <p class="body" style="font-size:30px;margin-top:6px;max-width:22ch;line-height:1.4">{sub}</p>
+  <div class="rc-foot"><img src="{logo}"><span class="handle">{HANDLE}</span></div>
+</div>
+</div></body></html>"""
 
 
 def before_after(headline_html, before_label, before_body, before_num,
