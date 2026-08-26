@@ -48,12 +48,27 @@ to white). Emphasis words can also be bold or bold-italic Poppins.
 3. **Poppins for the statement, Inter for the rest.** Big, confident headline.
 4. **Voice.** Plain and human, sell the outcome, no buzzwords, no dashes. See
    `voice-and-tone.md`.
-5. **Always sign off** with the logo and `@hellopeople_agency` (or `hellopeople.ca`).
+5. **Sign off on every slide; handle splits by role.** The Hello People logo
+   mark appears at the bottom of every slide. Regular slides (cover, numbered,
+   code, story) sign off with `@dhairyapatel.official` (personal, for reach).
+   CTA slides and the lead-magnet PDF footer sign off with `@hellopeople.ca`
+   (company, for capture). White logo on the blue CTA slide.
+6. **Grid rhythm: white, white, BLUE.** Instagram shows posts in a 3-column
+   grid. Every third carousel COVER is the solid brand-blue variant, the two
+   before it are the standard warped-grid white with blue accents. The profile
+   grid then reads as calm, calm, punch. Stories do not participate.
 6. **Safe zone.** On Stories/Reels keep text clear of the top and bottom ~250px.
 7. **Photos:** background-removed, black-and-white cut-out with a subtle white
    outline, placed at the bottom (see the Testimonial and Meme templates).
 8. **Contrast holds.** White or ink text only on solid color or the gradient,
    never small text on a busy image.
+9. **Contextual illustration fills empty space.** When a slide has an open band
+   (e.g. under a numbered carousel point, or a CTA), drop in ONE faint line
+   illustration that matches that slide's message, in the brand icon language
+   (24px grid, rounded). Fixed treatment: **0.3px stroke, 15% opacity** (the same
+   on light and dark slides), brand blue on light, white on blue. It fills the
+   gap and adds context without pulling the eye. Skip it where the slide is
+   already full. See `../social/` for the generator and locked rules.
 
 ## Caption starters (brand voice)
 
