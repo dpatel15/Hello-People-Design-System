@@ -168,6 +168,28 @@ def story_slide(eyebrow_text, headline_html, body, ill=None):
     </div>"""
     return frame(SW, SH, "220px 84px 220px", inner, extra=ex)
 
+def reel_cover(eyebrow_text, headline_html, sub, photo_path):
+    """
+    Reel cover image (1080x1920). The thumbnail Instagram shows on the Reels
+    tab. Photo cutout of the founder anchored bottom-right, big Poppins hook
+    on the left, small eyebrow tag at the top, logo + handle at the
+    bottom-left. Photos live outside the design system (they are personal
+    assets); pass an absolute file:// path.
+    """
+    photo_layer = (
+      f'<div style="position:absolute;right:-30px;bottom:120px;width:640px;height:1200px;z-index:1;pointer-events:none">'
+      f'<img src="file://{photo_path}" style="width:100%;height:100%;object-fit:contain;object-position:right bottom;filter:drop-shadow(0 0 24px rgba(29,80,207,.25))">'
+      f'</div>'
+    )
+    inner = f"""
+    <div style="max-width:640px">
+      <span class="eyebrow" style="font-size:26px">{eyebrow_text}</span>
+      <h1 style="font-size:96px;margin-top:26px">{headline_html}</h1>
+      <p class="body" style="font-size:30px;margin-top:32px;line-height:1.4;max-width:16ch">{sub}</p>
+    </div>"""
+    return frame(SW, SH, "260px 84px 200px", inner, extra=photo_layer)
+
+
 def before_after(headline_html, before_label, before_body, before_num,
                  after_label, after_body, after_num, eyebrow_text="AI in real life"):
     inner = f"""

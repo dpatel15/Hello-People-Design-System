@@ -31,6 +31,7 @@ the logo (`../assets/logo/`). Example output lives in
 | Instagram story | 1080 x 1920 (safe zone: keep content clear of top/bottom ~300px) |
 | Carousel (cover, content, CTA) | 1080 x 1350 |
 | Before / after data card | 1080 x 1080 |
+| Reel cover (Instagram thumbnail) | 1080 x 1920, photo cutout of founder anchored bottom-right, hook headline on the left |
 
 ## Locked visual rules (the standard, do not drift)
 
